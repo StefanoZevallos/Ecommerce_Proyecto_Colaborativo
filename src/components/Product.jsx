@@ -5,9 +5,11 @@ import { cartState } from "../atoms/cartState"
 import toast from 'react-hot-toast';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import { loginState } from '@/atoms/loginState';
 
 const Product = (product) => {
     const [cartItem, setCartItem] = useRecoilState(cartState);
+    const [login , setLogin] = useRecoilState(loginState)
 
 
     /* solo se ejecuta una vez, cuando se renderiza el componente */
@@ -41,6 +43,7 @@ const Product = (product) => {
     const addItemsToCart = () => {
         /* compara el id del producto actual con el producto que se esta agregando */
         /* si no encuentra coincidencia, devuelve -1 y ejecuta lo que esta dentro del if*/
+        if (login !== "Mi cuenta") {
         if(product.stock<=0) {
             // alert("No hay stock de este producto")
             toast.error(`No hay stock de ${product.title}`);
@@ -68,6 +71,8 @@ const Product = (product) => {
                         : item;
                 });
             });
+        }}else {
+            toast.error(`Debes estar logueado para agregar un producto`);
         }
 
     };

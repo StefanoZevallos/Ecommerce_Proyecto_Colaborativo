@@ -8,14 +8,9 @@ const Productos = () => {
 
     const [characters, setCharacters] = useState([]);
     const [charactersfiltered, setCharactersfiltered] = useState([]);
-  
+    
     const initialUrl= 'https://ecommerce-api-backend-nlld.onrender.com/productos';
-    const category1 = 'Telefonos';
-    const category2 = 'Laptops';
-    const category3 = 'Case';
-    const category4 = 'Impresoras';
-    const category5 = 'Refrigeracion';
-    const category6 = 'Monitores';
+
 
     useEffect(() => {
         const fetchCharacters = (url) =>{

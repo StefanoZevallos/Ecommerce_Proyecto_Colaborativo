@@ -5,10 +5,12 @@ import { useRecoilState } from 'recoil';
 import { cartState } from "../atoms/cartState"
 import toast from 'react-hot-toast';
 import { useEffect, useState } from 'react';
+import { loginState } from '@/atoms/loginState';
 
 const Card = (props) => {
 
   const [cartItem, setCartItem] = useRecoilState(cartState)
+  const [login,setLogin] = useRecoilState(loginState)
 
   useEffect(() => {
     // Obtener los datos del carrito guardados previamente
@@ -32,6 +34,7 @@ const Card = (props) => {
   const addItemsToCart = () => {
     /* compara el id del producto actual con el producto que se esta agregando */
     /* sino encuentra coincidencia, devuelve -1 y ejecuta lo que esta dentro del if*/
+    if (login !== "Mi cuenta") {
     if (cartItem.findIndex((pro) => pro.id === props.id) === -1) {
       /* se crea un objeto newProduct con sintaxis ...product para copiar las propiedades del producto sin alterar su data original */
       /* se inicializa la cantidad en 1 de cada producto*/
@@ -47,9 +50,14 @@ const Card = (props) => {
             : item;
         });
       });
-    }
-    /* metodo para usar alertas como notificaciones */
+    } 
     toast.success(`${props.title} Agregado al Carrito`);
+  } else {
+    toast.error(`Debes estar logueado para agregar un producto`);
+  }
+    /* metodo para usar alertas como notificaciones */
+    
+
   };
 
   return (

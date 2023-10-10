@@ -49,16 +49,16 @@ const renderIconsDer = () => {
       {/* DROP DOWN CON CONDICIONALES */}
       {showRedDiv ? (
         <div
-          className="right-[2.5cm] bg-gradient-to-t from-[#0F2027] bg-[#2C5364]  w-[145px] h-[100px] absolute top-[76px] flex flex-col justify-center items-center text-white"
+          className="right-[2.5cm] bg-gradient-to-t from-[#0F2027] bg-[#2C5364]  w-[160px] h-[100px] absolute top-[76px] flex flex-col justify-center items-center text-white"
         >
           {login !== "Mi cuenta" ? (
             <>
               <p className="font-bold">¡Hola!, {login}</p>
               <Link href={'perfil'}><p>Mi Cuenta</p></Link>
-              <Link href={'pedidos'}><p>Mis Pedidos</p></Link>
+              <Link href={'cambiar-contrasena'}><p>Cambiar Contraseña</p></Link>
             
               <Link onClick={()=> LogoutButton()} href={'/'}>
-              <p>Cerrar Sesión</p>
+              <p className="text-red-500 font-bolds">Cerrar Sesión</p>
               </Link>
       
             </>

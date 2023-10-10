@@ -11,6 +11,8 @@ import React from "react";
 
 const RecoverPassword = () => {
   const [email, setEmail] = useState("");
+  const [contraseña, setContraseña] = useState("");
+  const [nuevaContraseña, setNuevaContraseña] = useState("");
 
   const router = useRouter();
 
@@ -21,7 +23,8 @@ const RecoverPassword = () => {
 
     axios
       .post("https://ecommerce-api-backend-nlld.onrender.com/recuperar-contrasena", {
-        email: email,
+        password: contraseña,
+        nuevaPassword: nuevaContraseña
       })
       .then(function (response) {
         console.log(response);

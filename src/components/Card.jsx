@@ -53,7 +53,7 @@ const Card = (props) => {
     } 
     toast.success(`${props.title} Agregado al Carrito`);
   } else {
-    toast.error(`Debes estar logueado para agregar un producto`);
+    toast.error(`Inicia sesión para agregar un producto`);
   }
     /* metodo para usar alertas como notificaciones */
     

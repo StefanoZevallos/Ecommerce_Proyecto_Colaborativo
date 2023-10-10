@@ -37,7 +37,7 @@ const Cart = () => {
         }));
         // validacion si el carrito >=1 , envia la peticion post 
          if (detallePedido.length >= 1) {
-          axios.post('http://127.0.0.1:5000/pedidos', {
+          axios.post('https://ecommerce-api-backend-nlld.onrender.com/pedidos', {
             'detallePedido': detallePedido
           }, {
             headers: {

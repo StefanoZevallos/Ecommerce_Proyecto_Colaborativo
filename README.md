@@ -1,34 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
 First, run the development server:
-
-```bash
-npm run dev
-# or
 yarn dev
-# or
-pnpm dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Explicación 
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Al darle click en Laptops , solo muestran las laptops que tenemos como productos
+![image](https://github.com/StefanoZevallos/Ecommerce_Proyecto_Colaborativo/assets/107054283/ac371764-f0d2-4af1-85f2-78ba33079261)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Al darle click a telefonos , solo se muestran los telefonos que tenemos como productos
+![image](https://github.com/StefanoZevallos/Ecommerce_Proyecto_Colaborativo/assets/107054283/3b3c8668-058e-4d91-9200-bf554988759d)
 
-## Learn More
+## En Pantalla Desktop , se muestran las categorias filtradas en la izquierda de manera vertical
+![image](https://github.com/StefanoZevallos/Ecommerce_Proyecto_Colaborativo/assets/107054283/dfa92771-385d-4043-9699-e7ded5388325)
 
-To learn more about Next.js, take a look at the following resources:
+## Drop Down para Iniciar Sesión y Regitrarse en la aplicación
+![image](https://github.com/StefanoZevallos/Ecommerce_Proyecto_Colaborativo/assets/107054283/de10a4fc-82c4-4b40-aedd-2f8496ce91f5)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## El Drop Down cambia cuando Iniciamos sesión con nuestra cuenta
+![image](https://github.com/StefanoZevallos/Ecommerce_Proyecto_Colaborativo/assets/107054283/11b5d579-b5b0-40dd-ba53-e2a4347d0ca5)

@@ -1,14 +1,11 @@
-## Getting Started
 
-First, run the development server:
-yarn dev
 
 ## Explicación 
-
-## Al darle click en Laptops , solo muestran las laptops que tenemos como productos
+https://www.youtube.com/watch?v=8ZSYzKniwAs&ab_channel=StefanoZevallosReyes
+## Al darle click en Laptops , solo muestran las laptops que tenemos como productos (Pantallas Mobile)
 ![image](https://github.com/StefanoZevallos/Ecommerce_Proyecto_Colaborativo/assets/107054283/ac371764-f0d2-4af1-85f2-78ba33079261)
 
-## Al darle click a telefonos , solo se muestran los telefonos que tenemos como productos
+## Al darle click a telefonos , solo se muestran los telefonos que tenemos como productos (Pantallas Mobile)
 ![image](https://github.com/StefanoZevallos/Ecommerce_Proyecto_Colaborativo/assets/107054283/3b3c8668-058e-4d91-9200-bf554988759d)
 
 ## En Pantalla Desktop , se muestran las categorias filtradas en la izquierda de manera vertical

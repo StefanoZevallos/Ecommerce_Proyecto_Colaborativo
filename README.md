@@ -2,6 +2,9 @@
 
 ## Explicación 
 https://www.youtube.com/watch?v=8ZSYzKniwAs&ab_channel=StefanoZevallosReyes
+
+# Filtrado de Productos de Ecommerce en React.Js
+
 ## Al darle click en Laptops , solo muestran las laptops que tenemos como productos (Pantallas Mobile)
 ![image](https://github.com/StefanoZevallos/Ecommerce_Proyecto_Colaborativo/assets/107054283/ac371764-f0d2-4af1-85f2-78ba33079261)
 
